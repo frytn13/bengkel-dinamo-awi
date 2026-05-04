@@ -9,7 +9,11 @@ class Vendor extends Model
 {
     use HasFactory;
 
-    @var array
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     protected $fillable = [
         'name',
         'phone',

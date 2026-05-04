@@ -1,58 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
+  <img src="[https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg](https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg)" width="300" alt="Laravel Logo">
+  <br>
+  <h1>Sistem Informasi Akuntansi & ERP<br>Bengkel Dinamo Awi</h1>
+  <p><strong>Aplikasi Point of Sales (POS), Inventory Control, dan Financial Audit Berskala Enterprise</strong></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+  <p>
+    <img src="[https://img.shields.io/badge/Framework-Laravel_11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white](https://img.shields.io/badge/Framework-Laravel_11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)" alt="Laravel">
+    <img src="[https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)" alt="MySQL">
+    <img src="[https://img.shields.io/badge/UI-Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white](https://img.shields.io/badge/UI-Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)" alt="Bootstrap">
+    <img src="[https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)" alt="Status">
+  </p>
+</div>
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📖 Deskripsi Proyek
+Sistem Informasi Akuntansi (SIA) Bengkel Dinamo Awi adalah solusi perangkat lunak berbasis web yang dirancang untuk mendigitalisasi dan mengotomatisasi proses bisnis bengkel otomotif. Dikembangkan menggunakan *framework* Laravel, sistem ini mengintegrasikan berbagai modul krusial mulai dari manajemen rantai pasok (*Supply Chain*), manajemen inventaris, operasional kasir (*Point of Sales*), hingga pembuatan laporan keuangan dan audit secara *real-time*.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Proyek ini berfokus pada keandalan data (*Data Integrity*), efisiensi operasional, serta penerapan standar pelaporan yang akurat guna mendukung pengambilan keputusan strategis bagi manajemen.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## ✨ Fitur Utama (Core Modules)
 
-## Learning Laravel
+### 1. Master Data Management
+Modul pengelolaan data fundamental yang terstruktur dengan relasi *database* yang ketat (*Strict Foreign Key Constraints*).
+- Manajemen Produk & Sparepart (Kategori, Satuan, Multi-Lokasi Rak).
+- Manajemen Data Vendor / Pemasok.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### 2. Supply Chain & Procurement
+- **Purchase Order (PO):** Pencatatan pesanan pembelian kepada vendor dengan visibilitas status dokumen (*Pending, Parsial, Selesai, Ditutup Paksa*).
+- **Receive Order (RO):** Modul penerimaan barang yang secara otomatis memperbarui kuantitas stok gudang dan mencatat rekapitulasi hutang dagang (Hutang Vendor).
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 3. Point of Sales (POS) & Manajemen Piutang
+- Antarmuka transaksi kasir dinamis yang mendukung layanan Jasa Servis, Penjualan Sparepart, maupun kombinasi keduanya.
+- Integrasi metode pembayaran Tunai (Kas Masuk) dan Tempo (Pencatatan Piutang Pelanggan).
+- Sistem proteksi stok otomatis untuk mencegah manipulasi atau insiden *negative stock*.
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+### 4. Inventory Control & Asset Tracking
+- Pencatatan pengeluaran barang untuk kebutuhan operasional bengkel (Pemakaian Internal).
+- Pencatatan barang rusak/hilang (*Write-off*) yang terintegrasi dengan laporan pengeluaran aset.
+- Fungsionalitas *Void* untuk membatalkan transaksi dengan mekanisme *rollback* stok yang dijamin keamanannya oleh *Database Transactions*.
 
-## Agentic Development
+### 5. Financial Reporting & Audit
+Modul pelaporan *Enterprise-grade* yang memproses kalkulasi finansial kompleks secara akurat:
+- Pemantauan metrik keuangan utama: **Kas Masuk, Kas Keluar, Total Piutang Pelanggan**, dan **Hutang Vendor**.
+- Audit rekonsiliasi barang (identifikasi sisa PO yang berstatus *Backorder*).
+- Fitur cetak laporan *Real-Time* berformat PDF presisi tinggi (menggunakan *engine client-side rendering*) dengan desain tata letak A4 yang terstandarisasi.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+---
 
+## 💻 Arsitektur & Teknologi
+
+- **Backend:** PHP 8.x, Laravel 11.x
+- **Frontend:** HTML5, CSS3, Bootstrap 5, Vanilla JavaScript, jQuery
+- **Database:** MySQL (Relational Database Design with Strict ACID Compliance)
+- **PDF Engine:** html2pdf.js (Client-side Document Rendering)
+
+---
+
+## 🚀 Panduan Instalasi (Development Setup)
+
+Untuk menjalankan proyek ini di lingkungan pengembangan lokal (*Localhost*), silakan ikuti instruksi berikut:
+
+**1. Kloning Repositori**
 ```bash
-composer require laravel/boost --dev
-
-php artisan boost:install
+git clone https://github.com/username-anda/bengkel-dinamo-awi.git
+cd bengkel-dinamo-awi
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+**2. Instalasi Dependensi**
+```bash
+composer install
+npm install && npm run build
+```
 
-## Contributing
+**3. Konfigurasi Environment**
+Salin file `.env.example` menjadi `.env`, lalu sesuaikan kredensial koneksi *database* (`DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`).
+```bash
+cp .env.example .env
+php artisan key:generate
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+**4. Migrasi Database & Data Seeder**
+Sistem ini menyertakan *seeder* komprehensif (Master Data, PO, RO, Sales) untuk keperluan pengujian fungsionalitas pelaporan dan pembuktian struktur relasi.
+```bash
+php artisan migrate:fresh --seed
+```
 
-## Code of Conduct
+**5. Jalankan Server Lokal**
+```bash
+php artisan serve
+```
+Akses aplikasi melalui peramban web di `[http://127.0.0.1:8000](http://127.0.0.1:8000)`
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 📸 Antarmuka Sistem (Screenshots)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+| Dashboard Kasir | Laporan Keuangan (PDF) |
+| :---: | :---: |
+| <img src="tautan-gambar-kasir-anda.png" width="400" alt="Dashboard Kasir"> | <img src="tautan-gambar-laporan-anda.png" width="400" alt="Laporan PDF"> |
 
-## License
+*(Catatan: Silakan unggah screenshot sistem Anda ke folder repositori dan perbarui tautan gambar di atas).*
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 👨‍💻 Informasi Pengembang
+
+**Yulianus Febry Tri Nugroho**  
+*Informatics Student at Universitas Musi Charitas (UKMC), Palembang*
+
+Let's connect:
+- **Email:** [frytn13@gmail.com]
+<br>
+<p align="center"><i>© 2026 Yulianus Febry Tri Nugroho. All Rights Reserved.</i></p>
