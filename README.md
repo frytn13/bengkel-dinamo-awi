@@ -1,16 +1,12 @@
-<div align="center">
-  <img src="[https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg](https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg)" width="300" alt="Laravel Logo">
-  <br>
-  <h1>Sistem Informasi Akuntansi & ERP<br>Bengkel Dinamo Awi</h1>
-  <p><strong>Aplikasi Point of Sales (POS), Inventory Control, dan Financial Audit Berskala Enterprise</strong></p>
+# Sistem Informasi Akuntansi & ERP - Bengkel Dinamo Awi
+**Aplikasi Point of Sales (POS), Inventory Control, dan Financial Audit Berskala Enterprise**
 
-  <p>
-    <img src="[https://img.shields.io/badge/Framework-Laravel_11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white](https://img.shields.io/badge/Framework-Laravel_11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)" alt="Laravel">
-    <img src="[https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white](https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)" alt="MySQL">
-    <img src="[https://img.shields.io/badge/UI-Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white](https://img.shields.io/badge/UI-Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)" alt="Bootstrap">
-    <img src="[https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge](https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge)" alt="Status">
-  </p>
-</div>
+<p>
+  <img src="https://img.shields.io/badge/Framework-Laravel_11-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel">
+  <img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/UI-Bootstrap_5-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/Status-Production_Ready-success?style=for-the-badge" alt="Status">
+</p>
 
 ---
 
@@ -63,7 +59,7 @@ Untuk menjalankan proyek ini di lingkungan pengembangan lokal (*Localhost*), sil
 
 **1. Kloning Repositori**
 ```bash
-git clone https://github.com/username-anda/bengkel-dinamo-awi.git
+git clone [https://github.com/username-anda/bengkel-dinamo-awi.git](https://github.com/username-anda/bengkel-dinamo-awi.git)
 cd bengkel-dinamo-awi
 ```
 
@@ -90,17 +86,7 @@ php artisan migrate:fresh --seed
 ```bash
 php artisan serve
 ```
-Akses aplikasi melalui peramban web di `[http://127.0.0.1:8000](http://127.0.0.1:8000)`
-
----
-
-## 📸 Antarmuka Sistem (Screenshots)
-
-| Dashboard Kasir | Laporan Keuangan (PDF) |
-| :---: | :---: |
-| <img src="tautan-gambar-kasir-anda.png" width="400" alt="Dashboard Kasir"> | <img src="tautan-gambar-laporan-anda.png" width="400" alt="Laporan PDF"> |
-
-*(Catatan: Silakan unggah screenshot sistem Anda ke folder repositori dan perbarui tautan gambar di atas).*
+Akses aplikasi melalui peramban web di `http://127.0.0.1:8000`
 
 ---
 
@@ -110,6 +96,8 @@ Akses aplikasi melalui peramban web di `[http://127.0.0.1:8000](http://127.0.0.1
 *Informatics Student at Universitas Musi Charitas (UKMC), Palembang*
 
 Let's connect:
-- **Email:** [frytn13@gmail.com]
+- **LinkedIn:** [Profil LinkedIn Anda](https://linkedin.com/in/username)
+- **Email:** [Alamat Email Anda](mailto:email@domain.com)
+
 <br>
 <p align="center"><i>© 2026 Yulianus Febry Tri Nugroho. All Rights Reserved.</i></p>
