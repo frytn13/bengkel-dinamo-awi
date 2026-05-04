@@ -96,8 +96,7 @@ Akses aplikasi melalui peramban web di `http://127.0.0.1:8000`
 *Informatics Student at Universitas Musi Charitas (UKMC), Palembang*
 
 Let's connect:
-- **LinkedIn:** [Profil LinkedIn Anda](https://linkedin.com/in/username)
-- **Email:** [Alamat Email Anda](mailto:email@domain.com)
+- **Email:** [frytn13@gmail.com](mailto:frytn13@gmail.com)
 
 <br>
 <p align="center"><i>© 2026 Yulianus Febry Tri Nugroho. All Rights Reserved.</i></p>
